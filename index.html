@@ -1,38 +1,136 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FunFunGames (뻔뻔게임즈) - Official Studio</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 40px 20px; color: #222; }
-        header { border-bottom: 2px solid #eee; padding-bottom: 20px; margin-bottom: 30px; }
-        h1 { margin: 0; color: #111; }
-        .card { background: #f8f9fa; padding: 24px; border-radius: 8px; margin-bottom: 24px; }
-        footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; font-size: 0.9em; color: #555; }
-        a { color: #0066cc; text-decoration: none; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FunFunGames (뻔뻔게임즈) - Official Studio</title>
+  <meta name="description" content="뻔뻔게임즈(FunFunGames)는 픽셀 아트 기반의 모바일·PC 인디 게임을 만드는 스튜디오입니다. 픽셀 제너럴, 용사를 막아라, 영혼을 흡수하는 용병단을 개발하고 있습니다.">
+  <meta property="og:title" content="FunFunGames (뻔뻔게임즈)">
+  <meta property="og:description" content="픽셀 아트로 만드는 대규모 전투, 그리고 반복할수록 깊어지는 로그라이트.">
+  <meta property="og:image" content="https://funfungamesstudio.com/assets/img/pixel-general/keyart.webp">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>FunFunGames (뻔뻔게임즈)</h1>
-        <p>Mobile &amp; PC Indie Game Development Studio</p>
-    </header>
-    <div class="card">
-        <h2>About Us</h2>
-        <p>FunFunGames(뻔뻔게임즈)는 독창적이고 몰입감 넘치는 모바일 및 PC 게임을 개발하는 인디 게임 스튜디오입니다. Google Play 스토어와 Steam 플랫폼을 통해 글로벌 유저들에게 즐거움을 전달합니다.</p>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><span class="brand-mark">F</span>FunFunGames <small>뻔뻔게임즈</small></a>
+      <nav class="nav">
+        <a href="#games">Games</a>
+        <a href="#about" class="hide-sm">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-    <div class="card">
-        <h2>Links &amp; Support</h2>
-        <p>• <a href="/privacy.html"><strong>Privacy Policy (개인정보처리방침)</strong></a></p>
-        <p>• Customer Support: gkdlqkdl12@gmail.com</p>
-    </div>
-    <footer>
-        <p><strong>상호명 (Company):</strong> 뻔뻔게임즈 (FunFunGames)<br>
+  </header>
+
+  <main>
+    <section class="hero" style="padding:0">
+      <div class="hero-bg" style="background-image:url('assets/img/pixel-general/rare-skill-burst.webp')"></div>
+      <div class="wrap">
+        <p class="eyebrow">Indie Game Studio · Mobile &amp; PC</p>
+        <h1>수백 명이 맞붙는 전장을 픽셀로 그립니다</h1>
+        <p class="lead">뻔뻔게임즈는 픽셀 아트 기반의 모바일·PC 게임을 만드는 인디 스튜디오입니다. 한 판은 짧고 가볍게, 반복할수록 조합과 성장이 깊어지는 게임을 만듭니다.</p>
+        <div class="btn-row">
+          <a class="btn primary" href="#games">게임 둘러보기</a>
+          <a class="btn" href="#contact">문의하기</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="games">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Our Games</h2>
+          <p>하나의 전투 엔진에서 출발해 서로 다른 방향으로 뻗어 나간 세 개의 프로젝트입니다.</p>
+        </div>
+        <div class="games">
+          <a class="game-card" href="games/pixel-general.html" style="--c:#f2c14e">
+            <div class="thumb"><img src="assets/img/pixel-general/keyart-sm.webp" alt="픽셀 제너럴 키 아트" loading="lazy"></div>
+            <div class="body">
+              <span class="code">PROJECT 001</span>
+              <h3>픽셀 제너럴<small>Pixel General</small></h3>
+              <div class="tags"><span class="tag status">개발 완료</span><span class="tag">전술 오토배틀</span><span class="tag">로그라이트</span></div>
+              <p>장수를 모으고 병력을 늘려 작은 부대를 거대한 군단으로. 수백 명이 동시에 싸우는 자동 전투 속에서 결정적인 스킬은 직접 겨눕니다.</p>
+              <span class="more">자세히 보기 →</span>
+            </div>
+          </a>
+          <a class="game-card" href="games/stop-the-heroes.html" style="--c:#e0523f">
+            <div class="thumb">
+              <img src="assets/img/stop-the-heroes/monster-defense-sm.webp" alt="용사를 막아라 전투 화면" loading="lazy">
+              <div class="logo"><img src="assets/img/stop-the-heroes/logo.webp" alt="용사를 막아라: 마왕성 디펜스 로고" loading="lazy"></div>
+            </div>
+            <div class="body">
+              <span class="code">PROJECT 004</span>
+              <h3>용사를 막아라: 마왕성 디펜스<small>Stop the Heroes</small></h3>
+              <div class="tags"><span class="tag status">개발 중</span><span class="tag">카드 소환 디펜스</span><span class="tag">로그라이트</span></div>
+              <p>이번에는 몬스터의 편입니다. 카드를 끌어 몬스터 군단을 소환하고, 마왕성으로 몰려오는 용사들을 막아내세요.</p>
+              <span class="more">자세히 보기 →</span>
+            </div>
+          </a>
+          <a class="game-card" href="games/soul-mercenaries.html" style="--c:#a78bfa">
+            <div class="thumb"><img src="assets/img/soul-mercenaries/mine-exploration-sm.webp" alt="영혼을 흡수하는 용병단 던전 탐험 화면" loading="lazy"></div>
+            <div class="body">
+              <span class="code">PROJECT 005</span>
+              <h3>영혼을 흡수하는 용병단<small>가제 · Working Title</small></h3>
+              <div class="tags"><span class="tag status">개발 중</span><span class="tag">용병단 운영 RPG</span><span class="tag">던전 탐험</span></div>
+              <p>몬스터의 영혼을 용병에게 흡수시켜 능력치와 행동 패턴, 스킬을 조합합니다. 어떤 영혼을 주느냐에 따라 파티의 싸움 방식이 달라집니다.</p>
+              <span class="more">자세히 보기 →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="band">
+      <div class="wrap about-grid">
+        <div>
+          <p class="eyebrow">About Us</p>
+          <h2>작은 팀, 큰 전장</h2>
+          <p>FunFunGames(뻔뻔게임즈)는 독창적이고 몰입감 넘치는 모바일 및 PC 게임을 개발하는 인디 게임 스튜디오입니다. Google Play 스토어와 Steam 플랫폼을 통해 글로벌 유저들에게 즐거움을 전달하는 것을 목표로 합니다.</p>
+          <p>Unity로 개발하며, 화면을 가득 채우는 대규모 전투를 모바일에서도 매끄럽게 돌리는 데 공을 들입니다. 한 번의 런이 끝나도 다음 도전으로 이어지는 성장 구조를 모든 게임의 뼈대로 삼고 있습니다.</p>
+        </div>
+        <div class="pillars">
+          <div class="pillar"><span class="n">01</span><div><h3>대규모 전투</h3><p>수십에서 수백 단위의 유닛이 한 화면에서 동시에 싸웁니다.</p></div></div>
+          <div class="pillar"><span class="n">02</span><div><h3>선택이 만드는 빌드</h3><p>스킬·장비·특성·카드를 매 판 다르게 조합해 나만의 전략을 완성합니다.</p></div></div>
+          <div class="pillar"><span class="n">03</span><div><h3>끝나지 않는 성장</h3><p>패배는 끝이 아닙니다. 환생과 유물로 다음 런을 더 강하게 시작합니다.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Links &amp; Support</h2>
+          <p>게임 문의, 버그 제보, 제휴 제안 모두 아래 메일로 받습니다.</p>
+        </div>
+        <div class="contact">
+          <div class="box">
+            <h3>Customer Support</h3>
+            <p><a href="mailto:gkdlqkdl12@gmail.com">gkdlqkdl12@gmail.com</a></p>
+          </div>
+          <div class="box">
+            <h3>Privacy Policy</h3>
+            <p><a href="privacy.html">개인정보처리방침 보기 →</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="biz">
+        <strong>상호명 (Company):</strong> 뻔뻔게임즈 (FunFunGames)<br>
         <strong>대표자 (Representative):</strong> 김하늘 (Haneul Kim)<br>
         <strong>사업장 주소 (Address):</strong> 경기도 용인시 수지구 용구대로2790번길 7, 302-가71호 (7, Yonggu-daero 2790beon-gil, Suji-gu, Yongin-si, Gyeonggi-do, 16866, Republic of Korea)<br>
-        <strong>이메일 (Contact):</strong> gkdlqkdl12@gmail.com</p>
-        <p>&copy; 2026 FunFunGames. All rights reserved.</p>
-    </footer>
+        <strong>이메일 (Contact):</strong> gkdlqkdl12@gmail.com
+      </div>
+      <div>
+        <a href="privacy.html">Privacy Policy (개인정보처리방침)</a><br>
+        &copy; 2026 FunFunGames. All rights reserved.
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
