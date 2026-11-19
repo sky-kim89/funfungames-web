@@ -231,3 +231,27 @@ section { padding: 88px 0; }
   .facts div { grid-template-columns: 80px 1fr; }
   .block { padding: 56px 0; }
 }
+
+/* policy documents */
+.doc .meta { color: var(--dim); font-size: 14px; margin: -12px 0 28px; }
+.doc .notice { background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--accent); padding: 14px 18px; color: var(--text); font-size: 15px; }
+.doc h3 { font-size: 16px; margin: 24px 0 8px; color: var(--text); }
+.doc ul, .doc ol { color: var(--muted); padding-left: 22px; margin: 0 0 16px; }
+.doc li { margin: 4px 0; }
+.doc li ol, .doc li ul { margin: 6px 0 0; }
+.doc strong { color: var(--text); }
+.doc .toc { background: var(--panel); border: 1px solid var(--line); padding: 18px 22px; margin: 0 0 32px; }
+.doc .toc b { display: block; margin-bottom: 8px; font-size: 15px; }
+.doc .toc ol { margin: 0; columns: 2; column-gap: 28px; font-size: 14px; }
+.doc .toc a { color: var(--muted); text-decoration: none; }
+.doc .toc a:hover { color: var(--accent); }
+.doc .table-wrap { overflow-x: auto; margin: 0 0 18px; border: 1px solid var(--line); }
+.doc table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
+.doc th, .doc td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); color: var(--muted); }
+.doc th { background: var(--bg-2); color: var(--text); font-weight: 600; white-space: nowrap; }
+.doc tr:last-child td { border-bottom: 0; }
+.doc .pill { display: inline-block; font-size: 12px; font-weight: 700; padding: 1px 7px; border: 1px solid currentColor; white-space: nowrap; }
+.doc .pill.on { color: #6fd39a; }
+.doc .pill.plan { color: var(--accent); }
+.doc h2 { scroll-margin-top: 80px; }
+@media (max-width: 640px) { .doc .toc ol { columns: 1; } }
